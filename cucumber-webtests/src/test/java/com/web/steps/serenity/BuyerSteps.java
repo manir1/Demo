@@ -41,7 +41,7 @@ public class BuyerSteps extends ScenarioSteps {
     public void get_product_details() {
     	listingPage.getProductDetails();
     }
-    
+    @Step
     public void get_Kindle_book_details() {
     	String name = listingPage.getProductDescription(1);
     	assertThat(listingPage.getKindelBookPrice(name)).isNotEqualTo(null);
